@@ -147,16 +147,42 @@ def monitor_network(interval=300, speed_test_interval=3600, light_mode=True):  #
         
         time.sleep(interval)
 
+def parse_arguments():
+    """Parse command line arguments"""
+    import argparse
+    parser = argparse.ArgumentParser(description='Network connectivity and speed monitor')
+    
+    parser.add_argument(
+        '-i', '--interval',
+        type=int,
+        default=300,
+        help='Interval between connectivity checks in seconds (default: 300)'
+    )
+    
+    parser.add_argument(
+        '-s', '--speed-interval',
+        type=int,
+        default=3600,
+        help='Interval between speed tests in seconds (default: 3600)'
+    )
+    
+    parser.add_argument(
+        '--no-light-mode',
+        action='store_true',
+        help='Disable light mode (uses more data but potentially more accurate)'
+    )
+    
+    return parser.parse_args()
+
 if __name__ == "__main__":
     try:
-        # Run with default settings: 
-        # - Check connectivity every 5 minutes
-        # - Run speed tests every hour
-        # - Use light mode for reduced data usage
+        args = parse_arguments()
+        
+        # Run with command line settings or defaults
         monitor_network(
-            interval=300,           # 5 minutes
-            speed_test_interval=3600,  # 1 hour
-            light_mode=True
+            interval=args.interval,
+            speed_test_interval=args.speed_interval,
+            light_mode=not args.no_light_mode
         )
     except KeyboardInterrupt:
         logging.info("Monitoring stopped by user")
