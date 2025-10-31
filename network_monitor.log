@@ -42,3 +42,5 @@
 2025-10-31 13:48:29,462 - INFO - Monitoring stopped by user
 2025-10-31 13:49:02,622 - INFO - Starting network monitoring...
 2025-10-31 13:49:24,569 - INFO - Network Status: Connected | Download: 1.07 Mbps | Upload: 2.03 Mbps | Ping: 28.08 ms | WiFi: Up
+2025-10-31 13:54:24,595 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 13:54:52,997 - INFO - Monitoring stopped by user
