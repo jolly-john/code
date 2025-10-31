@@ -1,11 +1,4 @@
-# Network Monitor and Rock Paper Scissors App
-
-This repository contains two Python applications:
-
-1. Network Monitor - A tool for monitoring internet connectivity and performance
-2. Rock Paper Scissors Game - A simple CLI-based game
-
-## Network Monitor
+# Network Monitor
 
 A Python-based network monitoring tool that tracks internet connectivity, speed, and performance metrics over time. The tool performs periodic connectivity checks and speed tests while saving the data in both CSV format and detailed logs.
 
@@ -137,22 +130,3 @@ This allows for creating visualizations or analyzing network performance trends 
 - Speed test results may vary based on network conditions
 - The script requires continuous internet access
 - Consider your data plan limitations when setting test intervals
-
-## Rock Paper Scissors Game
-
-A simple CLI-based Rock Paper Scissors game.
-
-### Structure
-- `main.py`: Main script for running the game
-- `rps/`: Game logic module
-- `tests/`: Test files
-
-### How to Run
-```bash
-python main.py
-```
-
-### How to Play
-- Enter your choice: rock, paper, or scissors
-- The computer will randomly select its move
-- The winner will be displayed
