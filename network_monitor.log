@@ -1,0 +1,44 @@
+2025-10-31 11:17:19,509 - INFO - Starting network monitoring...
+2025-10-31 11:17:41,732 - INFO - Network Status: Connected | Download: 31.03 Mbps | Upload: 49.3 Mbps | Ping: 13.78 ms | WiFi: Up
+2025-10-31 11:23:02,545 - INFO - Network Status: Connected | Download: 42.48 Mbps | Upload: 50.98 Mbps | Ping: 10.82 ms | WiFi: Up
+2025-10-31 11:28:24,010 - INFO - Network Status: Connected | Download: 25.1 Mbps | Upload: 48.43 Mbps | Ping: 15.98 ms | WiFi: Up
+2025-10-31 11:33:45,725 - INFO - Network Status: Connected | Download: 21.42 Mbps | Upload: 50.75 Mbps | Ping: 16.38 ms | WiFi: Up
+2025-10-31 11:39:06,855 - INFO - Network Status: Connected | Download: 28.5 Mbps | Upload: 53.67 Mbps | Ping: 12.3 ms | WiFi: Up
+2025-10-31 11:44:28,646 - INFO - Network Status: Connected | Download: 19.18 Mbps | Upload: 44.46 Mbps | Ping: 14.51 ms | WiFi: Up
+2025-10-31 11:44:35,314 - INFO - Monitoring stopped by user
+2025-10-31 11:44:39,496 - INFO - Starting network monitoring...
+2025-10-31 11:45:00,737 - ERROR - Speed test failed: cannot access local variable 'download_speed' where it is not associated with a value
+2025-10-31 11:45:00,738 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 11:50:21,831 - ERROR - Speed test failed: cannot access local variable 'download_speed' where it is not associated with a value
+2025-10-31 11:50:21,832 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 11:51:37,435 - INFO - Monitoring stopped by user
+2025-10-31 11:53:08,008 - INFO - Starting network monitoring...
+2025-10-31 11:53:29,059 - INFO - Network Status: Connected | Download: 38.67 Mbps | Upload: 28.08 Mbps | Ping: 16.5 ms | WiFi: Up
+2025-10-31 11:58:29,075 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 12:03:29,089 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 12:08:29,101 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 12:13:29,115 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 12:18:29,131 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 12:23:29,146 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 12:28:29,162 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 12:33:29,177 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 12:38:29,193 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 12:43:29,209 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 12:48:29,223 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 12:53:50,438 - INFO - Network Status: Connected | Download: 28.86 Mbps | Upload: 32.75 Mbps | Ping: 18.5 ms | WiFi: Up
+2025-10-31 12:58:50,456 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 13:03:50,487 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 13:08:50,513 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 13:12:53,485 - INFO - Monitoring stopped by user
+2025-10-31 13:12:56,149 - INFO - Starting network monitoring...
+2025-10-31 13:13:17,339 - INFO - Network Status: Connected | Download: 32.82 Mbps | Upload: 36.16 Mbps | Ping: 16.15 ms | WiFi: Up
+2025-10-31 13:18:17,340 - WARNING - Network Status: Disconnected
+2025-10-31 13:23:17,347 - WARNING - Network Status: Disconnected
+2025-10-31 13:28:17,358 - WARNING - Network Status: Disconnected
+2025-10-31 13:33:17,365 - WARNING - Network Status: Disconnected
+2025-10-31 13:38:17,372 - WARNING - Network Status: Disconnected
+2025-10-31 13:43:17,385 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 13:48:17,399 - INFO - Network Status: Connected | Download: None Mbps | Upload: None Mbps | Ping: None ms | WiFi: Up
+2025-10-31 13:48:29,462 - INFO - Monitoring stopped by user
+2025-10-31 13:49:02,622 - INFO - Starting network monitoring...
+2025-10-31 13:49:24,569 - INFO - Network Status: Connected | Download: 1.07 Mbps | Upload: 2.03 Mbps | Ping: 28.08 ms | WiFi: Up
