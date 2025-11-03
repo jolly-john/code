@@ -7,6 +7,15 @@ from datetime import datetime
 import socket
 import csv
 from pathlib import Path
+import requests
+from statistics import mean
+
+# List of reliable websites to test response time
+PING_URLS = [
+    'https://www.google.com',
+    'https://www.cloudflare.com',
+    'https://www.amazon.com'
+]
 
 # Set up logging
 logging.basicConfig(
@@ -59,6 +68,29 @@ def get_network_speed(light_mode=True):
         logging.error(f"Speed test failed: {str(e)}")
         return None
 
+def get_http_response_times():
+    """
+    Test HTTP response time to well-known websites
+    Returns average response time in milliseconds
+    """
+    response_times = []
+    
+    for url in PING_URLS:
+        try:
+            # Send GET request and measure time
+            response = requests.get(url, timeout=5)
+            response_time = response.elapsed.total_seconds() * 1000  # Convert to milliseconds
+            response_times.append(response_time)
+            logging.debug(f"Response time for {url}: {response_time:.2f}ms")
+        except (requests.RequestException, requests.Timeout) as e:
+            logging.debug(f"Failed to get response from {url}: {str(e)}")
+            continue
+    
+    # Return average response time if we have any successful measurements
+    if response_times:
+        return round(mean(response_times), 2)
+    return None
+
 def get_wifi_strength():
     """
     Get WiFi signal strength using psutil
@@ -84,7 +116,7 @@ def save_to_csv(data):
     csv_file = Path('network_stats.csv')
     is_new_file = not csv_file.exists()
     
-    fieldnames = ['timestamp', 'connected', 'download_mbps', 'upload_mbps', 'ping_ms', 'wifi_status']
+    fieldnames = ['timestamp', 'connected', 'download_mbps', 'upload_mbps', 'ping_ms', 'wifi_status', 'http_response_ms']
     
     with open(csv_file, mode='a', newline='') as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
@@ -115,10 +147,16 @@ def monitor_network(interval=300, speed_test_interval=3600, light_mode=True):  #
             'download_mbps': None,
             'upload_mbps': None,
             'ping_ms': None,
-            'wifi_status': None
+            'wifi_status': None,
+            'http_response_ms': None
         }
         
         if connected:
+            # Get HTTP response times on every connectivity check
+            http_response_time = get_http_response_times()
+            if http_response_time:
+                data['http_response_ms'] = http_response_time
+            
             # Only run speed test at specified intervals
             if current_time - last_speed_test >= speed_test_interval:
                 speed_data = get_network_speed(light_mode=light_mode)
