@@ -32,7 +32,7 @@ source .venv/bin/activate  # On Linux/Mac
 
 2. Install required packages:
 ```bash
-pip install speedtest-cli psutil
+pip install -r requirements.txt
 ```
 
 ### Usage
