@@ -6,6 +6,7 @@ A Python-based network monitoring tool that tracks internet connectivity, speed,
 
 - Periodic internet connectivity checks
 - Speed tests (download/upload speeds and ping)
+- HTTP response time monitoring to major websites
 - WiFi status monitoring
 - Data-saving "light mode" for metered connections
 - CSV data export for analysis
@@ -89,6 +90,7 @@ The script generates two types of output files:
    - upload_mbps
    - ping_ms
    - wifi_status
+   - http_response_ms (average response time to major websites)
 
 2. `network_monitor.log`: Detailed log file with readable formatted output
 
@@ -124,9 +126,20 @@ The CSV output can be easily imported into:
 
 This allows for creating visualizations or analyzing network performance trends over time.
 
+### HTTP Response Time Testing
+
+The script includes real-world latency testing by measuring HTTP response times to major websites:
+- Tests multiple reliable websites (Google, Cloudflare, Amazon)
+- Measures actual web response time including DNS resolution and TLS handshake
+- Runs on every connectivity check (very lightweight)
+- Reports average response time in milliseconds
+- Handles timeouts and failures gracefully
+- Uses minimal data (simple HEAD requests)
+
 ### Notes
 
 - WiFi signal strength monitoring may not work on all systems
 - Speed test results may vary based on network conditions
 - The script requires continuous internet access
 - Consider your data plan limitations when setting test intervals
+- HTTP response times provide real-world latency measurements
